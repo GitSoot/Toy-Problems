@@ -1,0 +1,16 @@
+let basicSalary = prompt('Input your basic salary');
+const paye1 = (basicSalary * 0.10);
+const paye2 = (basicSalary * 0.24);
+const paye3 = (basicSalary * 0.30);
+const personalRelief = 2400;
+const personalReliefYear = personalRelief * 12;
+const insuranceRelief = 5000;
+const insuranceReliefYear = insuranceRelief * 12;
+const pensionFund = 20000;
+const pensionFundYear = pensionFund * 12;
+const housingRelief = 9000;
+const housingReliefYear = housingRelief * 12;
+const ownerOccupierInterest = 25000;
+const ownerOccupierInterestYear = ownerOccupierInterest * 12;
+const disabilityExemption = 150000;
+const disabilityExemptionYear = disabilityExemption * 12;
