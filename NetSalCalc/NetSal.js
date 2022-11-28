@@ -1,9 +1,9 @@
 let basicSalary = prompt('Input your basic monthly salary');
 //variable for deducations and exemptions
-const paye1 = (basicSalary * 0.10);
-const paye2 = (basicSalary * 0.24);
-const paye3 = (basicSalary * 0.30);
-const paye4 = (basicSalary * 0.37);
+const paye1 = (basicSalary * 0.90);
+const paye2 = (basicSalary * 0.84);
+const paye3 = (basicSalary * 0.75);
+const paye4 = (basicSalary * 0.65);
 const personalRelief = 2400;
 const insuranceRelief = 5000;
 const pensionFund = 20000;
