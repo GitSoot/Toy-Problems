@@ -1,19 +1,13 @@
-let basicSalary = prompt('Input your basic salary');
+let basicSalary = prompt('Input your basic monthly salary');
 const paye1 = (basicSalary * 0.10);
 const paye2 = (basicSalary * 0.24);
 const paye3 = (basicSalary * 0.30);
+const paye4 = (basicSalary * 0.37);
 const personalRelief = 2400;
-const personalReliefYear = personalRelief * 12;
 const insuranceRelief = 5000;
-const insuranceReliefYear = insuranceRelief * 12;
 const pensionFund = 20000;
-const pensionFundYear = pensionFund * 12;
 const housingRelief = 9000;
-const housingReliefYear = housingRelief * 12;
-const ownerOccupierInterest = 25000;
-const ownerOccupierInterestYear = ownerOccupierInterest * 12;
-const disabilityExemption = 150000;
-const disabilityExemptionYear = disabilityExemption * 12;
+const relief = personalRelief + insuranceRelief + housingRelief;
 
 function netsal(basicSalary) {
     let salary;
@@ -26,6 +20,18 @@ function netsal(basicSalary) {
         salary = basicSalary - 400;
     } else if (basicSalary > 12000 && basicSalary < 14999) {
         salary = basicSalary - 500;
+    } else if (basicSalary > 15000 && basicSalary < 19999) {
+        salary = basicSalary - 600;
+    } else if (basicSalary > 20000 && basicSalary < 29999) {
+        salary = basicSalary - 850;
+    } else if (basicSalary > 30000 && basicSalary < 69999) {
+        salary = (paye1 + relief) - 1100;
+    } else if (basicSalary > 70000 && basicSalary < 129999) {
+        salary = (paye2 + relief) - 1700;
+    } else if (basicSalary > 130000 && basicSalary < 199999) {
+        salary = (paye3 + relief) - 2000;
+    } else {
+        salary = (paye4 + relief) - (pensionFund + 2300)
     }
     return salary
 }
