@@ -1,5 +1,7 @@
+//User speed prompt
 let carSpeed = prompt("How fast was the car traveling?");
 
+//demerit points counter
 function demerits(carSpeed) {
     let response;
     if (carSpeed < 70) {
