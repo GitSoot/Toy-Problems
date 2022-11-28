@@ -1,4 +1,5 @@
 let basicSalary = prompt('Input your basic monthly salary');
+//variable for deducations and exemptions
 const paye1 = (basicSalary * 0.10);
 const paye2 = (basicSalary * 0.24);
 const paye3 = (basicSalary * 0.30);
@@ -8,7 +9,7 @@ const insuranceRelief = 5000;
 const pensionFund = 20000;
 const housingRelief = 9000;
 const relief = personalRelief + insuranceRelief + housingRelief;
-
+//net salary function
 function netsal(basicSalary) {
     let salary;
     if (basicSalary < 6000) {
