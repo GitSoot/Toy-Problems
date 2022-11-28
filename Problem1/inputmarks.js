@@ -1,5 +1,6 @@
+//User prompt for score
 let score = prompt ('Enter your score to know your grade.')
-
+//Grade function
 function getGrade(score) {
     let letter;
     if (score >= 79 && score <= 100) {
