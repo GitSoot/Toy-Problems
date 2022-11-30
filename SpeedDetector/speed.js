@@ -9,7 +9,11 @@ function demerits(carSpeed) {
     } else {
         const quotient = Math.floor(carSpeed/5);
         for (i = 0; i <= (quotient - 14); i++) {
+            if (i >= 12) {
+                response = "License suspended"
+            } else {
             response = `Points: ${i}`
+            }
         }
     }
     return response
