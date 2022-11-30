@@ -36,7 +36,7 @@ function netsal(basicSalary) {
     } else if (basicSalary > 15000 && basicSalary < 19999) {
         nssf = 400;
         nhif = 600;
-        salary = basicSalary - (nssf + nhif);
+        salary = (basicSalary + relief) - (nssf + nhif);
     } else if (basicSalary > 20000 && basicSalary < 29999) {
         nssf = 1000;
         nhif = 900;
@@ -62,7 +62,7 @@ function netsal(basicSalary) {
         tax = basicSalary - paye1;
         salary = (paye1 + relief) - (nhif + nssf);
     }
-    return [`net salary = ${salary},  gross salary = ${basicSalary}, NHIF deductions = ${nhif}, PAYE = ${tax}, NSSF deductions = ${nssf}`]
+    return [`net salary = ${salary},  gross salary = ${basicSalary}, NHIF deductions = ${nhif}, PAYE = ${tax}, NSSF deductions = ${nssf}, Relief: ${relief}`]
 }
 
 let netsalary = netsal;
