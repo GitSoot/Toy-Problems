@@ -1,3 +1,4 @@
+//Prompt user input for basic monthly salary
 let basicSalary = prompt('Input your basic monthly salary');
 //variable for deducations and exemptions
 const paye1 = (basicSalary * 0.90);
