@@ -12,7 +12,7 @@ function getGrade(score) {
       letter = 'C';
     } else if (score >= 40 && score <= 49) {
       letter = 'D';
-    } else if (score < 40) {
+    } else if (score < 40 && score >= 1) {
       letter = 'F';
     } else {
         letter = 'Invalid Score. Try Again'
